@@ -1,3 +1,4 @@
+// HigherOrderAndCallBack.md
 // challenge 1
 const addOne = (arr) => {
   let arr1 = [];
@@ -76,3 +77,98 @@ const countNumberOfElements = (arr) => {
   });
   return arr10;
 };
+
+// Extra challenge
+const items = [
+  {
+    item: "switch",
+    purchasePrice: 399,
+  },
+  {
+    item: "nike",
+    purchasePrice: 150,
+  },
+];
+
+const addPurchases = (arr) => {
+  let ext1 = arr.reduce((acc, index, item) => {
+    return item;
+  });
+  return ext1;
+};
+//===========================================================\\
+
+// objects
+// challenge one
+
+const checkValues = (obj, value) => {
+  if (Object.values(obj).includes(value)) {
+    return console.log(true);
+  } else {
+    console.log(false);
+  }
+};
+
+//challenge 2
+const courseInfo = {
+  name: "Code 301",
+  duration: { dayTrack: "4 weeks", eveningTrack: "8 weeks" },
+  topics: [
+    "SMACSS",
+    "APIs",
+    "NodeJS",
+    "SQL",
+    "jQuery",
+    "functional programming",
+  ],
+  finalExam: true,
+};
+
+const getCourseKeys = (obj) => {
+ console.log(Object.keys(obj));
+};
+// challenge 3
+{
+  
+}
+
+//HR has asked you to change the data to make it easier to print so that it looks like this: 
+
+[
+ // 'Grace Hopper: 222-303-5938','Ada Lovelace: 222-349-9842','Alan Turing: 222-853-5933'
+]
+
+
+//const updateNumbers = (obj) => {
+  let usrs =[]
+  usrs.push('GraceHopper:'+'222-303-5938'&&'AdaLovelace:'+'222-349-9842'&&'Alan Turing:+222-853-5933')
+  
+// Challenge 4
+
+const PassedOrFailed = function (studentGrades) {
+  let sg = studentGrades
+  if ( sg >= 50){
+    console.log('The student have passed');
+    
+  }
+else {console.log('The student have failed');}
+};
+
+const studentOne = {
+  math: { grade: 70, total: 120 },
+  english: { grade: 80, total: 100 },
+  art: { grade: 90, total: 100 }
+};
+
+const studentTwo = {
+  math: { grade: 59, total: 120 },
+  english: { grade: 80, total: 100 },
+  art: { grade: 90, total: 100 }
+};
+// challenge 5
+const totalCharacters = (arr) => {
+  let arr99 = arr.reduce((item,acc,index)=>{
+    return acc+item+index;}
+    )
+  console.log(arr99.length  -1);
+}
